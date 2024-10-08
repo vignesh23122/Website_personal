@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal PortFolio Website, Details about me and my works">
+    <meta name="keywords" content="vignesh, srivignesh, Srivignesh, vicky, Vicky, SRIVIGNESH">
+    <meta name="author" content="Srivignesh">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Srivignesh.live">
+    <meta property="og:description" content="Personal PortFolio Website, Details about me and my works">
+    <meta property="og:url" content="https://www.srivignesh.live">
+    <!-- add image -->
+    <!-- <meta property="og:image" content="https://www.yourwebsite.com/path-to-image.jpg"> -->
+    <meta property="og:type" content="website">
+    <!-- add large image -->
+    <!-- <meta name="twitter:card" content="summary_large_image"> -->
+    <meta name="twitter:title" content="Srivignesh.live">
+    <meta name="twitter:description" content="Personal PortFolio Website, Details about me and my works">
+    <!-- <meta name="twitter:image" content="https://www.yourwebsite.com/path-to-image.jpg"> -->
+    <meta name="twitter:site" content="@HIPHOPVICKY7">
+    <link rel="icon" href="https://img.icons8.com/ios-filled/90/crane.png" type="image/x-icon">
+    <!-- <link rel="apple-touch-icon" href="https://www.yourwebsite.com/path-to-apple-touch-icon.png"> -->
+    <meta name="theme-color" content="#ffffff">
+    <link rel="canonical" href="https://www.srivignesh.live">
+    <meta http-equiv="Content-Language" content="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="cache-control" content="no-cache">
+    <meta http-equiv="expires" content="0">
+    <meta http-equiv="pragma" content="no-cache">
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https://trusted.com;"> -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Add Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+
+    <title>Srivignesh</title>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --bg_primary: #EFF3D8;
+            --primary_textClr: white;
+            --card-clr: rgba(255, 255, 255,.9);
+            --card-txt-clr: black;
+            --card-heading-clr: #FD0505;
+            --card-timer-clr: #black;
+        }
+
+        body {
+            overflow: hidden;
+            background:url(../static/img.png) no-repeat center center/cover;
+            color: var(--primary_textClr);
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container>.card {
+            padding: 3em 1em;
+            background-color: var(--card-clr);
+            color: var(--card-txt-clr);
+            width: 35ch;
+            font-family: Inter;
+            border-radius: 19px;
+            box-shadow: 9px 5px 25px 0px rgb(0, 0, 0, 25%);
+            transition: transform 0.5s;
+        }
+        .container>.card:hover{
+            transform: scale(1.1);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--card-heading-clr);
+            line-height: 39px;
+        }
+
+        h3 {
+            font-size: 2.3rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            /* line-height: 50px; */
+        }
+
+        h5 {
+            font-size: 1.2rem;
+            font-weight: 500;
+            letter-spacing: 1px;
+
+        }
+
+        .timers {
+            display: flex;
+            justify-content: flex-start;
+            gap: 1em;
+            margin: 2em 2em 2em 0;
+        }
+
+        .timers>.timer {
+            padding: .7em;
+            display: flex;
+            flex-direction: column;
+            border-radius: 10px;
+            box-shadow: 6px 5px 9.5px 0px rgb(0, 0, 0, 25%);
+            border: 1px solid rgb(0, 0, 0, 10%);
+
+        }
+
+        .timer>span {
+            font-size: 1.7rem;
+
+            color: var(card-timer-clr);
+            text-align: center;
+        }
+
+        .timer>.smalltext {
+            font-size: .6rem;
+            font-weight: 500;
+            color: var(card-timer-clr);
+            text-align: center;
+        }
+
+        /* Basic styling for the social icons */
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            margin: 2em;
+            /* border: 2px solid red; */
+        }
+
+        .social-icons a {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            border-radius: 50%;
+            text-align: center;
+            background-color: #333;
+            text-decoration: none;
+            /* Background color for icons */
+            color: white;
+            /* Icon color */
+            font-size: 24px;
+            /* Size of the icon */
+            transition: background-color 0.3s ease;
+        }
+
+        /* Change background color on hover */
+        .social-icons a:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Under</h1>
+            <h3>Construction</h3>
+            <h5>Will come back soon...</h5>
+            <div class="timers">
+                <div class="timer">
+                    <span id="days">00</span>
+                    <div class="smalltext">Days</div>
+                </div>
+                <div class="timer">
+                    <span id="hours">00</span>
+                    <div class="smalltext">Hrs</div>
+                </div>
+                <div class="timer">
+                    <span id="minutes">00</span>
+                    <div class="smalltext">Min</div>
+                </div>
+                <div class="timer">
+                    <span id="seconds">00</span>
+                    <div class="smalltext">Sec</div>
+                </div>
+            </div>
+        </div>
+        <div class="social-icons">
+            <!-- Facebook -->
+            <a href="https://facebook.com" target="_blank" class="fab fa-facebook-f"></a>
+
+            <!-- Twitter -->
+            <a href="https://twitter.com" target="_blank" class="fab fa-twitter"></a>
+
+            <!-- Instagram -->
+            <a href="https://instagram.com" target="_blank" class="fab fa-instagram"></a>
+
+            <!-- LinkedIn -->
+            <a href="https://linkedin.com" target="_blank" class="fab fa-linkedin-in"></a>
+
+            <!-- YouTube -->
+            <a href="https://youtube.com" target="_blank" class="fab fa-youtube"></a>
+        </div>
+    </div>
+    <script>
+        var days = document.getElementById('days');
+        var hours = document.getElementById('hours');
+        var minu = document.getElementById('minutes');
+        var sec = document.getElementById('seconds');
+
+        const tendate = new Date('2024-10-15');
+        // Function to update the countdown every second
+        function updateCountdown() {
+            const now = new Date().getTime(); // Get the current time
+            const timeLeft = tendate - now; // Calculate the remaining time in milliseconds
+
+            // Calculate days, hours, minutes, and seconds
+            days.innerText = (Math.floor(timeLeft / (1000 * 60 * 60 * 24))).toString().padStart(2, '0');
+            hours.innerText = (Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))).toString().padStart(2, '0');
+            minu.innerText = (Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60))).toString().padStart(2, '0');
+            sec.innerText = (Math.floor((timeLeft % (1000 * 60)) / 1000)).toString().padStart(2, '0');
+
+
+            // If the countdown is over, display a message
+            if (timeLeft < 0) {
+                clearInterval(countdownInterval);
+                document.getElementById("timer").innerHTML = "Countdown ended!";
+            }
+        }
+
+        // Update the countdown every second (1000 milliseconds)
+        const countdownInterval = setInterval(updateCountdown, 1000);
+    </script>
+    </script>
+</body>
+
+</html>
