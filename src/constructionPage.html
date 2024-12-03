@@ -78,9 +78,9 @@
             box-shadow: 9px 5px 25px 0px rgb(0, 0, 0, 25%);
             transition: transform 0.5s;
         }
-        .container>.card:hover{
+        /* .container>.card:hover{
             transform: scale(1.1);
-        }
+        } */
 
         h1 {
             font-size: 3rem;
@@ -112,17 +112,16 @@
 
         .timers>.timer {
             padding: .7em;
+            max-width: 10ch;
             display: flex;
             flex-direction: column;
             border-radius: 10px;
             box-shadow: 6px 5px 9.5px 0px rgb(0, 0, 0, 25%);
             border: 1px solid rgb(0, 0, 0, 10%);
-
         }
 
         .timer>span {
             font-size: 1.7rem;
-
             color: var(card-timer-clr);
             text-align: center;
         }
@@ -215,7 +214,7 @@
         var minu = document.getElementById('minutes');
         var sec = document.getElementById('seconds');
 
-        const tendate = new Date('2024-10-15');
+        const tendate = new Date('2024-12-30');
         // Function to update the countdown every second
         function updateCountdown() {
             const now = new Date().getTime(); // Get the current time
@@ -238,7 +237,7 @@
         // Update the countdown every second (1000 milliseconds)
         const countdownInterval = setInterval(updateCountdown, 1000);
     </script>
-    </script>
+   
 </body>
 
 </html>
