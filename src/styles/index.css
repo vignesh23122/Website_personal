@@ -1,0 +1,129 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+/* contact page font */
+@font-face {
+    font-family: contactFont;
+    src: url(../../static/free-shipping-webfont/FreeShipping-d9E1R.woff);
+  }
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+:root{
+    --body_background: #000000;
+    --text_color:#ffffff;
+    /* navbar */
+    --nav_headerTxt: 29px;
+    --nav_linksSize:21px;
+}
+body{
+    background-color: var(--body_background)!important;
+    overflow-x: hidden;
+    font-family: roboto-mono;
+    cursor: url('../../static/pointer.png'), auto;
+    /* cursor: none; */
+}
+
+/* navbar styles component*/
+.fnt{
+    font-family: roboto-mono;
+}
+nav .container{
+    display: flex;
+}
+nav .headerName{
+    color: var(--text_color);
+    font-size: var(--nav_headerTxt) ;
+}
+
+nav .nav_links ul{
+    display: flex;
+    gap: 1.5em;
+    font-size: var(--nav_linksSize);
+}
+nav .nav_links li{
+    color: var(--text_color);
+    list-style-type: none;
+    font-weight: light;
+}
+nav .nav_links li:hover{
+    transform: scale(1.1);
+}
+nav .nav_links li a{
+    text-decoration: none;
+    color: var(--text_color);
+}
+
+.home_cont{
+    height: calc(960vh - 90px);
+}
+dotlottie-player{
+    max-height:500px;
+    max-width: 500px;
+}
+.rightContainer{
+    /* background-color: red; */
+    width: 100%;
+    padding: 8em;
+}
+.rightContainer span:nth-child(1),
+.rightContainer span:nth-child(2) {
+  font-size: clamp(1rem, 5vw, 3rem); /* Scales between 1rem and 5rem */
+  font-weight: 300;
+  line-height: 55px;
+}
+
+.rightContainer span:nth-child(3) {
+  font-size: clamp(2rem, 10vw, 7.5rem); /* Scales between 2rem and 6rem */
+  margin-top: -1vw;
+  font-weight: bolder;
+}
+
+
+.arrowAnim{
+    animation: ArrowAnim 1.5s infinite ;
+}
+@keyframes ArrowAnim {
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(5px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}
+
+.projects_page{
+    height: 100vh;
+}
+.contactFont{
+    font-family:contactFont ;
+    font-size: clamp(1rem,5vw,8rem);
+    font-size: 9rem;
+    max-width: 10ch;
+    line-height: clamp(90px, 120px, 120px);
+}
+
+.socialfont{
+    /* font-size: 15px!important; */
+    font-weight: 300!important;
+    font-family: roboto-mono;
+}
+.social_icons{
+    height: 100%;
+}
+.social_icons:hover{
+    background: white;
+    border: 1px solid white;
+}
+.social_icons:hover a{
+    color: black!important;
+    transform:scale(1.1);
+}
+.social_icons:active{
+    border: 1px solid pink;
+}

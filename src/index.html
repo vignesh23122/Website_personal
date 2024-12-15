@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Srivignesh</title>
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
+  </head>
+  <body id="body">
+    <nav class="navbar p-4 sticky-top bg-black bdr_btm">
+      <div class="container d-flex justify-content-between">
+        <div class="d-flex">
+          <p class="headerName fnt">Portfolio</p>
+        </div>
+        <div class="nav_links">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li>Projects</li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <section id="home">
+    <div class="container d-flex flex-row py-4 bg-white rounded">
+      <div class="leftContainer">
+        <dotlottie-player
+          src="https://lottie.host/bef2c50f-cf4b-4176-b60d-ab14b73a61fb/u5ieArqltQ.lottie"
+          background="transparent"
+          speed=".6"
+          style="width: 500px; height: 500px"
+          loop
+          autoplay
+        ></dotlottie-player>
+      </div>
+      
+      <div class="rightContainer d-flex justify-content-center">
+        <div class="d-flex flex-column text-black">
+          <span>Hi Hello</span>
+          <span>I'm</span>
+          <span>Srivignesh</span>
+        </div>
+      </div>
+    </div>
+  </section>
+    
+    <div class="container my-5 d-flex justify-content-center py-4">
+      <span class="p text-white">scroll down</span>
+      <span class="text-white mx-3 arrowAnim" style="margin-top: -5px"
+        >&darr;
+      </span>
+    </div>
+    <div class="projects_page container"></div>
+    <div class="contact_page container-fluid bg-dark p-5">
+      <div class="container d-flex flex-row justify-content-center gap-4">
+        <div class="p-3 d-flex flex-column rounded">
+          <span class="contactFont text-white">Drop me a Line</span>
+          <span class="text-white fs-4">'ll get in touch</span>
+        </div>
+        <div class="d-flex h-100 p-2 flex-column">
+          <div class="social_icons row border rounded p-3 m-2">
+            <!-- Twitter -->
+            <a
+              href="https://twitter.com"
+              target="_blank"
+              class="fab fa-twitter text-white w-100 text-decoration-none col-6 fs-4 social_links "
+              ><span class="mx-3 socialfont d-none">@hiphopvicky</span></a
+            >
+          </div>
+          <div class="social_icons row border rounded p-3 m-2">
+            <!-- linkedIn -->
+            <a
+              href="https://linkedIn.com"
+              target="_blank"
+              class="fab fa-linkedin text-white w-100 text-decoration-none col-6 fs-4"
+              ><span class="mx-3 socialfont d-none">@srivignesh</span></a
+            >
+          </div>
+          <div class="social_icons row border rounded p-3 m-2">
+            <!-- github -->
+            <a
+              href="https://github.com/vignesh23122"
+              target="_blank"
+              class="fab fa-github text-white w-100 text-decoration-none col-6 fs-4"
+              ><span class="mx-3 socialfont d-none bg-white text-black">@vignesh23122</span></a
+            >
+          </div>
+          <div class="social_icons row border rounded p-3 m-2">
+            <!-- mail -->
+            <a
+              href="mailto:srivignesh23122001@gmail.com"
+              target="_blank"
+              class="fa fa-envelope text-white w-100 text-decoration-none col-6 fs-4"
+              ><span class="mx-3 socialfont d-none">@hiphopvicky</span></a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div
+      class="bottom_bar container-fluid d-flex justify-content-center bg-white"
+    >
+      <span class="fs-5">@2024 - Srivignesh</span>
+    </div>
+  </body>
+</html>
