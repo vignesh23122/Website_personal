@@ -24,7 +24,7 @@
     ></script>
   </head>
   <body id="body">
-    <nav class="navbar p-4 sticky-top bg-black bdr_btm">
+    <nav class="navbar py-3 sticky-top bg-black bdr_btm">
       <div class="container d-flex justify-content-between">
         <div class="d-flex">
           <p class="headerName fnt">Portfolio</p>
@@ -38,52 +38,157 @@
       </div>
     </nav>
     <section id="home">
-    <div class="container d-flex flex-row py-4 bg-white rounded">
-      <div class="leftContainer">
+      <div
+        class="container bg-white d-flex flex-column flex-sm-column flex-md-column flex-lg-row flex-xl-row py-4 rounded"
+      >
+        <div
+          class="leftContainer d-flex justify-content-center d-none d-sm-none d-md-none d-lg-block"
+        >
+          <dotlottie-player
+            src="https://lottie.host/bef2c50f-cf4b-4176-b60d-ab14b73a61fb/u5ieArqltQ.lottie"
+            background="transparent"
+            speed=".5"
+            loop
+            autoplay
+          ></dotlottie-player>
+        </div>
+
+        <div class="rightContainer d-flex justify-content-center">
+          <div class="d-flex flex-column">
+            <span>Hi Hello</span>
+            <span>I'm</span>
+            <span>Srivignesh</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container my-5 d-flex justify-content-center py-4">
+      <span class="p text-white">scroll down</span>
+      <span class="mx-3 arrowAnim text-white" style="margin-top: -5px"
+        >&darr;
+      </span>
+    </div>
+
+    <!-- ----------Services section start-------- -->
+    <section class="services bg-white">
+      <div class="services-container">
+        <h1 class="head11 before">Services</h1>
+      </div>
+      <div class="card-container ">
+        <div class="cardds card1">
+          <h1 class="card-text">
+            <img src="../static/icon/icons8-web-development-64.png" alt="01" />
+          </h1>
+          <h3 class="card-subtext">Web Development</h3>
+          <p class="card-maintext">
+            Lorem ipsum dolor sit amet sda as consectetur, adipisicing elit.
+            Commodi, quis!
+          </p>
+        </div>
+        <div class="cardds card2">
+          <h1 class="card-text">
+            <img src="../static/icon/icons8-design-65.png" alt="02" />
+          </h1>
+          <h3 class="card-subtext">UI Design</h3>
+          <p class="card-maintext">
+            Lorem ipsum dolor sit amet sda as consectetur, adipisicing elit.
+            Commodi, quis!
+          </p>
+        </div>
+        <div class="cardds card3">
+          <h1 class="card-text">
+            <img src="../static/icon/icons8-git-65.png" alt="03" />
+          </h1>
+          <h3 class="card-subtext">Git Management</h3>
+          <p class="card-maintext">
+            Lorem ipsum dolor sit amet sda as consectetur, adipisicing elit.
+            Commodi, quis!
+          </p>
+        </div>
+        <div class="cardds card1">
+          <h1 class="card-text">
+            <img src="../static/icon/icons8-python-65.png" alt="04" />
+          </h1>
+          <h3 class="card-subtext">Python Development</h3>
+          <p class="card-maintext">
+            Lorem ipsum dolor sit amet sda as consectetur, adipisicing elit.
+            Commodi, quis!
+          </p>
+        </div>
+        <div class="cardds card3">
+          <h1 class="card-text">
+            <img src="../static/icon/icons8-product-design-64.png" alt="05" />
+          </h1>
+          <h3 class="card-subtext">Product Design</h3>
+          <p class="card-maintext">
+            Lorem ipsum dolor sit amet sda as consectetur, adipisicing elit.
+            Commodi, quis!
+          </p>
+        </div>
+        <div class="cardds card1">
+          <h1 class="card-text">
+            <img src="../static/icon/icons8-seo-64.png" alt="06" />
+          </h1>
+          <h3 class="card-subtext">SEO Hacks</h3>
+          <p class="card-maintext">
+            Lorem ipsum dolor sit amet sda as consectetur, adipisicing elit.
+            Commodi, quis!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <div class="top">
+      <div class="top-text-container">
+        <h3 class="text-container-heading">Projects done by Me and Team</h3>
+        <p class="text-container-text text-white fs-3">
+          Explore the projects.....
+        </p>
+        <div class="buttons-nav">
+          <a href="../src/my-projects/projects.htm" class="e-btn">
+            <button class="explore-btn">Explore</button>
+          </a>
+
+          <a class="s-btn" href="https://github.com/vignesh23122">
+            <button class="source-btn">Source</button></a
+          >
+        </div>
+      </div>
+
+      <div class ="top-image">
         <dotlottie-player
-          src="https://lottie.host/bef2c50f-cf4b-4176-b60d-ab14b73a61fb/u5ieArqltQ.lottie"
+          src="https://lottie.host/8f00057e-0129-402a-a1b8-a0279b5c702d/dAtxdZtyGa.lottie"
           background="transparent"
-          speed=".6"
-          style="width: 500px; height: 500px"
+          speed="1"
+          style="width: 300px; height: 300px"
           loop
           autoplay
         ></dotlottie-player>
       </div>
-      
-      <div class="rightContainer d-flex justify-content-center">
-        <div class="d-flex flex-column text-black">
-          <span>Hi Hello</span>
-          <span>I'm</span>
-          <span>Srivignesh</span>
-        </div>
-      </div>
     </div>
-  </section>
-    
-    <div class="container my-5 d-flex justify-content-center py-4">
-      <span class="p text-white">scroll down</span>
-      <span class="text-white mx-3 arrowAnim" style="margin-top: -5px"
-        >&darr;
-      </span>
-    </div>
-    <div class="projects_page container"></div>
-    <div class="contact_page container-fluid bg-dark p-5">
-      <div class="container d-flex flex-row justify-content-center gap-4">
+
+    <div class="contact_page container-fluid bg-dark">
+      <div
+        class="container d-flex flex-lg-row flex-column flex-md-row justify-content-center gap-4 p-4"
+      > 
         <div class="p-3 d-flex flex-column rounded">
           <span class="contactFont text-white">Drop me a Line</span>
           <span class="text-white fs-4">'ll get in touch</span>
         </div>
-        <div class="d-flex h-100 p-2 flex-column">
-          <div class="social_icons row border rounded p-3 m-2">
+        <div
+          class="d-flex h-100 p-2 flex-row flex-sm-row flex-md-column flex-lg-column"
+        >
+          <div class="social_icons border rounded p-3 m-2">
             <!-- Twitter -->
             <a
-              href="https://twitter.com"
+              href="https://x.com/HIPHOPVICKY7"
               target="_blank"
-              class="fab fa-twitter text-white w-100 text-decoration-none col-6 fs-4 social_links "
+              class="fab fa-x text-white text-decoration-none fs-4 social_links"
               ><span class="mx-3 socialfont d-none">@hiphopvicky</span></a
             >
           </div>
-          <div class="social_icons row border rounded p-3 m-2">
+          <div class="social_icons border rounded p-3 m-2">
             <!-- linkedIn -->
             <a
               href="https://linkedIn.com"
@@ -92,16 +197,18 @@
               ><span class="mx-3 socialfont d-none">@srivignesh</span></a
             >
           </div>
-          <div class="social_icons row border rounded p-3 m-2">
+          <div class="social_icons border rounded p-3 m-2">
             <!-- github -->
             <a
               href="https://github.com/vignesh23122"
               target="_blank"
               class="fab fa-github text-white w-100 text-decoration-none col-6 fs-4"
-              ><span class="mx-3 socialfont d-none bg-white text-black">@vignesh23122</span></a
+              ><span class="mx-3 socialfont d-none bg-white text-black"
+                >@vignesh23122</span
+              ></a
             >
           </div>
-          <div class="social_icons row border rounded p-3 m-2">
+          <div class="social_icons border rounded p-3 m-2">
             <!-- mail -->
             <a
               href="mailto:srivignesh23122001@gmail.com"
@@ -113,7 +220,7 @@
         </div>
       </div>
     </div>
-    
+
     <div
       class="bottom_bar container-fluid d-flex justify-content-center bg-white"
     >

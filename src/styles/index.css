@@ -28,7 +28,7 @@ body{
 
 /* navbar styles component*/
 .fnt{
-    font-family: roboto-mono;
+    font-family: contactfont;
 }
 nav .container{
     display: flex;
@@ -61,7 +61,7 @@ nav .nav_links li a{
 }
 dotlottie-player{
     max-height:500px;
-    max-width: 500px;
+    width: 500px;
 }
 .rightContainer{
     /* background-color: red; */
@@ -70,40 +70,239 @@ dotlottie-player{
 }
 .rightContainer span:nth-child(1),
 .rightContainer span:nth-child(2) {
-  font-size: clamp(1rem, 5vw, 3rem); /* Scales between 1rem and 5rem */
+  font-size: clamp(2rem, 5vw, 3rem); /* Scales between 1rem and 5rem */
   font-weight: 300;
   line-height: 55px;
 }
 
 .rightContainer span:nth-child(3) {
-  font-size: clamp(2rem, 10vw, 7.5rem); /* Scales between 2rem and 6rem */
+  font-size: clamp(4rem, 10vw, 8rem); /* Scales between 2rem and 6rem */
   margin-top: -1vw;
   font-weight: bolder;
 }
 
 
 .arrowAnim{
-    animation: ArrowAnim 1.5s infinite ;
+    animation: ArrowAnim 1.5s linear infinite ;
 }
 @keyframes ArrowAnim {
-    0%{
+    /* 0%{
         transform: translateY(-5px);
     }
     50%{
         transform: translateY(5px);
-    }
+    } */
     100%{
-        transform: translateY(-5px);
+        transform: translateY(10px);
     }
 }
 
-.projects_page{
-    height: 100vh;
+.services {
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* font-family: poppins,sans-serif!important; */
+  }
+  .before{
+    position: relative;
+        font-family: contactfont;
+  }
+  .before::before{
+    content: 'What i do!';
+    font-size: 15px;
+    position: absolute;
+    bottom: -19px; 
+    left: 37px;
+  }
+  
+  .card-container{
+    /*border: 2px solid tomato;*/
+    max-width: 60em;
+   margin: 70px 2em 0 2em;
+    
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+  }
+  .card-maintext{
+    color: black;
+  }
+  .cardds{
+    
+    color: black;
+    box-shadow: 0px 0px 7px 0px rgb(0,0,0,0.2);
+    padding: 50px 10px 30px 20px;
+    border-radius: 10px;
+    border-color: white;
+    width: 300px;
+    position: relative;
+    
+  }
+  .cardds:hover{
+    transform: scale(1.03);
+  }
+  .card-text{
+    font-size: 35px;
+    font-weight: 900;
+  }
+  .card-maintext{
+    font-weight: 300;
+  }
+  .card-subtext{
+    font-size: 22px;
+  }
+  
+  .card-subtext,
+  .card-maintext{
+    margin-top:5px;
+  }
+  @media (min-width:560px) and (max-width:1060px){
+    .card-container{
+      grid-template-columns: repeat(2,1fr);
+    }
+  }
+  @media (min-width:560px) and (max-width:720px){
+    .cardds{
+      width: fit-content;
+    }
+    
+  }
+  @media (max-width:560px){
+    .card-container{
+      grid-template-columns: repeat(1,1fr);
+    }
+    .cardds
+    {
+      text-align: center;
+    }
+    
+  }
+
+  .top
+{
+    height: 420px;
+    width: 100%;
+    background: #99b4dd;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
+.top-image img{
+
+height: 400px;
+}
+
+
+.top-text-container{
+    display: flex;
+    flex-direction: column;
+    /* gap: 10px; */
+    width: max-content;
+    max-width: 50ch;
+    padding-left: 1em;
+    padding-right: .5em;
+    
+}
+.text-container-heading{
+    font-family: contactfont;
+    letter-spacing: 4px;
+    font-size: 50px;
+    color: white;
+    line-height: 1.2;
+    /* text-indent: 50px; */
+    
+}
+.text-container-heading::first-letter{
+    font-size: 60px;
+}
+.text-container-text{
+    margin: 4px 4px 0 0;
+}
+.buttons-nav{
+    display: flex;  
+}
+
+
+.explore-btn{
+    width: 120px;
+    height: 40px;
+    /* margin-top: 20px; */
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+   font-size: 17px;
+    outline: none;
+    transition: background .8s ease, border .6s ease,color .9s ease;
+}
+.explore-btn:hover{
+    background: white ;
+    border: none;
+    color: black;
+}
+.source-btn{
+    width: 120px;
+    height: 40px;
+    /* margin: 20px 0px 0px 30px;    */
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 17px;
+    transform: scale(1,1);
+    transition: transform .6s ease;
+}
+.source-btn:hover{
+    transform: scale(1.1);
+    border: none;
+}
+.e-btn{
+    height: 40px;
+    width: 120px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.s-btn{
+    height: 40px;
+    width: 120px;
+      
+}
+@media(min-width:310px){
+    .s-btn{
+        margin: 20px 0px 0px 30px; 
+
+    }
+   
+}
+
+@media(max-width:308px){
+    .buttons-nav{
+        flex-direction: column;
+    }
+    .s-btn{
+        margin-top: 20px;
+    }
+    .top{
+        height: 480px;
+    }
+}
+@media(max-width:847px){
+    .top-image{
+        display: none;
+    }
+    
+}
+
+
+
 .contactFont{
     font-family:contactFont ;
-    font-size: clamp(1rem,5vw,8rem);
-    font-size: 9rem;
+    font-size: clamp(7rem,5vw,8rem);
+    /* font-size: 9rem; */
     max-width: 10ch;
     line-height: clamp(90px, 120px, 120px);
 }
@@ -113,8 +312,10 @@ dotlottie-player{
     font-weight: 300!important;
     font-family: roboto-mono;
 }
+
 .social_icons{
     height: 100%;
+    width: fit-content;
 }
 .social_icons:hover{
     background: white;

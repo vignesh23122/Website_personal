@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects</title>
+    <link
+      rel="shortcut icon"
+      href="/icons/project fevicon.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../styles/project.css" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay"onclick="overlayOff()" ></div>
+    <section class="second" id="second">
+      <!-- <h1 class="second-heading">My Work</h1> -->
+
+      <div class="second-main-container">
+        <div class="second-heading">
+          <h1>List of all Projects </h1>
+          <p>
+            Here you can find all the list of done and going projects.
+          </p>
+        </div>
+        <div class="card card1" onclick="on(this)" data-card="card1">
+          <img
+            src="../icons/icons8-bank-building-50.png"
+            alt="Bank-management"
+            class="image1"
+          />
+          <p class="card-text one-line">Bank Management</p>
+        </div>
+        <div class="card card2 " onclick="on(this)" data-card="card2">
+          <img src="../icons/restaurant-management.png" alt="" class="image1" />
+          <p class="card-text one-line">Hotel Management</p>
+        </div>
+        <div class="card card3 " onclick="on(this)" data-card="card3">
+          <img src="../icons/icons8-card-payment-50.png" alt="" class="image1" />
+          <p class="card-text">Expense Tracker</p>
+        </div>
+        <div class="card card4 " onclick="on(this)" data-card="card4">
+          <img src="../icons/icons8-weather-65.png" alt="" class="image1" />
+          <p class="card-text">Weather-meter</p>
+        </div>
+        <div class="card card5 " onclick="on(this)" data-card="card5">
+          <img src="../icons/icons8-weather-65.png" alt="" class="image1" />
+          <p class="card-text">Weather-meter</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="tech-slideshow">
+      <div class="mover-1"></div>
+    </div>
+
+    <section class="third">
+      <div class="third-container">
+        <h1 class="third-heading">Intresting to work with me</h1>
+        <p class="third-text">
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+          Reprehenderit at dolore nesciunt eveniet ex dicta explicabo minus,
+          officiis eius nobis.
+        </p>
+
+        <a href=""><button class="third-btn">Get In Touch</button></a>
+      </div>
+    </section>
+    <script>
+      var listitems = {
+        "card1":{
+          "heading":"Bank Management",
+          "p":"A Netbeans project which symbolize a sample Bank Management software with database connectivity, visit the github page for working purpose",
+          "btn_link":"https://www.github.com/vignesh23122",
+          "source":"https://www.github.com/vignesh23122"
+        },
+        "card2":{
+          "heading":"Hotel Management",
+          "p":"",
+          "btn_link":"",
+          "source":"https://www.github.com/vignesh23122"
+        },
+        "card3":{
+          "heading":"Expense Tracker",
+          "p":"",
+          "btn_link":"",
+          "source":"https://www.github.com/vignesh23122"
+        },
+        "card4":{
+          "heading":"Weather Meter",
+          "p":"",
+          "btn_link":"",
+          "source":"https://www.github.com/vignesh23122"
+        },
+        "card5":{
+          "heading":"Travel website",
+          "p":"",
+          "btn_link":"",
+          "source":"https://www.github.com/vignesh23122"
+        },
+      }
+      var overlay = document.getElementById('overlay');
+      var createElement = (e)=>{
+        console.log(e);
+        console.log(listitems[e]);
+        var cardDetails = listitems[e]
+        var heading = cardDetails['heading']
+        var para = cardDetails['p']
+        var btnVisitLink = cardDetails['btn_link']
+        var btnSourceLink = cardDetails['source']
+
+
+        const div = document.createElement('div')
+        div.classList.add('content')
+        div.innerHTML=`
+         <div class="overlay-content">
+    <div class="overlay-text">
+      <h1 class="overlay-heading">${heading}</h1>
+      <p class="overlay-paragraph">
+        ${para}
+      </p>
+      <div class="overlay-buttons">
+        <a href="${btnVisitLink}" target="_blank" class="btn visit-site">Visit the Site</a>
+        <a href="${btnSourceLink}" target="_blank" class="btn source-code">Source Code</a>
+      </div>
+    </div>
+    <div class = "closing">click any where to close</div>
+  </div>`
+        overlay.innerHTML = ''
+        overlay.appendChild(div)
+      }
+      function on(element){
+        overlay.style.display = 'flex';
+        const selectedCard = element.dataset.card;
+        createElement(selectedCard)
+      }
+      function overlayOff() {
+        overlay.style.display = 'none'
+      }
+    </script>
+  </body>
+</html>
