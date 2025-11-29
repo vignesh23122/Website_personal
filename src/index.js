@@ -40,6 +40,7 @@ const typing = ()=> {
     });
   }
 };
+document.addEventListener("DOMContentLoaded", typing);
 
 document.addEventListener("scroll", (event) => {
     const home = document.getElementById("home");
@@ -51,4 +52,12 @@ document.addEventListener("scroll", (event) => {
     }
 });
 
-document.addEventListener("DOMContentLoaded", typing);
+const isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+
+if (isDarkMode) {
+  console.log("Dark mode is preferred.");
+  // Apply dark mode styles or logic
+} else {
+  console.log("Light mode is preferred or no preference set.");
+  // Apply light mode styles or logic
+}
